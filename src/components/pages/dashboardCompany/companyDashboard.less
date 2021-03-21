@@ -1,0 +1,120 @@
+.divider {
+  width: 80%;
+  height: 2px;
+  background: gray;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  .main-container {
+    width: calc(100% - 230px);
+    background-color: #E5E5E5;
+    .main-container_header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100px;
+      justify-content: space-between;
+      .main-container_header_name {
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: 30px;
+      }
+
+    }
+    .main-container_menu {
+      width: auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 120px 400px;
+      grid-column-gap: 30px;
+      grid-row-gap: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .main-container_menu_analysis {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+        .main-container_menu_analysis_card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: white;
+          border: 1px solid #DFE0EB;
+          border-radius: 8px;
+          .main-container_menu_analysis_card_title {
+            color: #9FA2B4;
+            font-size: 19px;
+            font-weight: 500;
+            margin-top: 7px;
+            margin-bottom: 7px;
+          }
+          .main-container_menu_analysis_card_value {
+            font-weight: bold;
+            font-size: 40px;
+            height: auto;
+            color: #252733;
+          }
+        }
+      }
+
+      .main-container_menu_addbutton {
+        //position: relative;
+        //z-index: 0;
+        width: 60%;
+        border: 1px solid #DFE0EB;
+      }
+
+      .main-container_menu_scheduled-food {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid #DFE0EB;
+        border-radius: 8px;
+        padding: 10px;
+
+        .main-container_menu_scheduled-food_title {
+          font-size: 27px;
+          font-weight: bold;
+          margin-bottom: 7px;
+        }
+
+        .main-container_menu_scheduled-food_companyname {
+          color: gray;
+          padding-bottom: 10px;
+          border-bottom: 2px solid gray;
+        }
+      }
+
+      .main-container_menu_history {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid #DFE0EB;
+        border-radius: 8px;
+        padding: 10px;
+
+        .main-container_menu_scheduled-food_title {
+          font-size: 27px;
+          font-weight: bold;
+          margin-bottom: 7px;
+        }
+
+        .main-container_menu_scheduled-food_companyname {
+          color: gray;
+          padding-bottom: 10px;
+          border-bottom: 2px solid gray;
+        }
+
+      }
+
+
+    }
+  }
+}

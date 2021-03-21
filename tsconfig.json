@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "strict": true,
+    "outDir": "builds",
+    "baseUrl": "./",
+    "paths": {
+      "components/*": [ "src/components/*" ],
+      "services/*": [ "src/services/*" ],
+      "@domain/*": [ "domain/*" ],
+      "@commons/*": [ "commons/*" ]
+    }
+  }
+}
